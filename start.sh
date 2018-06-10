@@ -3,7 +3,7 @@
 config_file=/srv/config/index.json
 
 if [ -f $config_file ]; then
-  cp -f $config_file /srv/index.json
+  cp -f $config_file /srv/arena/index.json
 fi
 
-node /srv/index.js
+node /srv/arena/index.js
