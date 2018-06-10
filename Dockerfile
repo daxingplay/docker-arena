@@ -1,4 +1,4 @@
-FROM node:8-apline
+FROM node:8-alpine
 
 ENV VERSION 2.4.5
 
