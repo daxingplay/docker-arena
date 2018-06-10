@@ -2,7 +2,7 @@ FROM node:8-apline
 
 ENV VERSION 2.4.5
 
-COPY docker /srv/
+COPY start.sh /srv/
 
 RUN set -xe && \
     apk add --no-cache unzip wget ca-certificate && \
