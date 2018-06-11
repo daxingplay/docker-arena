@@ -12,6 +12,9 @@ RUN set -xe && \
     rm -rf "v$VERSION.zip" && \
     chmod u+x /srv/start.sh && \
     apk del unzip curl
+    
+RUN cd /srv/arena && \
+    npm install --production
 
 VOLUME "/srv/config"
 
