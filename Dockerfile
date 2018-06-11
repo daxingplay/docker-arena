@@ -10,6 +10,7 @@ RUN set -xe && \
     unzip -o "v$VERSION.zip" -d /srv && \
     mv "/srv/arena-$VERSION" /srv/arena && \
     rm -rf "v$VERSION.zip" && \
+    chmod u+x /srv/start.sh && \
     apk del unzip curl
 
 VOLUME "/srv/config"
